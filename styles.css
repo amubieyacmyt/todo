@@ -1,0 +1,118 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: navy;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+#Tdlbody {
+    display: flex;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+#id {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input and Button Styling */
+#taskNum {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#addTask {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#addTask:hover {
+    background-color: #218838;
+}
+
+/* Task List Styling */
+#taskList {
+    margin-top: 20px;
+}
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.task-item span {
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+/* Styling for buttons */
+.task-item button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.task-item button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling for delete button */
+.task-item button:last-child {
+    background-color: #dc3545;
+}
+
+.task-item button:last-child:hover {
+    background-color: #c82333;
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #taskNum {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #addTask {
+        width: 100%;
+    }
+
+    #Tdlbody {
+        width: 90%;
+    }
+}
